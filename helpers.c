@@ -13,7 +13,7 @@
  */
 bool search(int value, int values[], int n)
 {
-    // TODO: implement a searching algorithm
+    // TODO: binary search
     return false;
 }
 
@@ -22,6 +22,6 @@ bool search(int value, int values[], int n)
  */
 void sort(int values[], int n)
 {
-    // TODO: implement an O(n^2) sorting algorithm
+    // TODO: counting sort
     return;
 }
