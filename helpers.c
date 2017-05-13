@@ -13,7 +13,19 @@
  */
 bool search(int value, int values[], int n)
 {
-    // TODO: binary search
+    int start,end,mid;
+    start=0;end=n-1;
+    while(start<=end){
+        mid=(start+end)/2;
+        if(values[mid]<value){
+            start=mid+1;
+        }
+        else if(values[mid]>value){
+            end=mid-1;
+        }
+        else return true;
+    }
+    //failure
     return false;
 }
 
@@ -22,6 +34,5 @@ bool search(int value, int values[], int n)
  */
 void sort(int values[], int n)
 {
-    // TODO: counting sort
-    return;
+    
 }
