@@ -34,5 +34,20 @@ bool search(int value, int values[], int n)
  */
 void sort(int values[], int n)
 {
-    
+    int count_arr[65536]={};
+    int i;
+    int *top;
+    top=values;
+    for(i=0;i<n;i++){
+        count_arr[values[i]]++;
+    }
+    for(i=0;i<65536;i++){
+        if(count_arr[i]!=0){
+            for(;count_arr[i]>0;count_arr[i]--){
+                *(top)=i;
+                top++;
+            }
+        }
+    }
+    return;
 }
