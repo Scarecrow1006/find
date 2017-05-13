@@ -39,7 +39,7 @@ void sort(int values[], int n)
     int *top;
     top=values;
     for(i=0;i<n;i++){
-        count_arr[values[i]]++;
+        count_arr[values[i]]+=1;
     }
     for(i=0;i<65536;i++){
         if(count_arr[i]!=0){
